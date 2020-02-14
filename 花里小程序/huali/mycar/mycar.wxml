@@ -1,0 +1,57 @@
+<!--huali/mycar/mycar.wxml-->
+
+  <view class="carimg" wx:for="{{cararr}}" wx:if="{{cararr.length>0}}" >
+<checkbox-group bindchange="donw" data-id="{{item.id}}" data-price="{{item.product_price}}"
+wx:key="{{item.id}}">
+    <checkbox  value="{{item.id}}" checked="{{checked}}" wx:ket="{{item.id}}"></checkbox>
+ </checkbox-group>
+
+    <image src="{{item.product_imgsrc}}"></image>
+    <view>
+      <view>{{item.product_name}}</view>
+      <view>
+        <text>¥{{item.product_price}}</text>
+        <text>X1</text>
+      </view>
+    </view>
+  
+  </view>
+ 
+
+<view class="footer"></view>
+  <view class="jiesuan">
+
+    <view>
+      <view bindtap="delete">删除</view>
+      <view>
+        合计:¥{{money}}.00
+        <view>
+          (不含运费)</view>
+      </view>
+
+      <view bindtap="gopay1" type="primary">结算</view>
+
+
+    </view>
+  </view>
+
+  <view class="carnull" wx:if="{{cararr<1}}">
+    <view>购物车时空的!</view>
+    <view>快去挑点东西吧</view>
+    <view bindtap="gopay">
+      去逛逛
+    </view>
+  </view>
+
+
+  <modal id="modal" hidden="{{hiddenmodalput}}" title="信息" confirm-text="确认" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+ 
+<input type='text' bindinput="name" placeholder="姓名：" auto-focus/>
+ 
+<input type='number' bindinput="phone" placeholder="电话：" auto-focus/>
+ 
+<input type='text' bindinput="address" placeholder="地址：" auto-focus/>
+ 
+<input type='text' bindinput="time" placeholder="配送时间：" auto-focus/>
+ 
+</modal>

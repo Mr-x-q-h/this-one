@@ -1,0 +1,107 @@
+<!--huali/huali.wxml-->
+
+<view class="myimg" bindtap="mylogo">
+  <image src="../../images/about-3.jpg"></image>
+</view>
+<view class="daohang">
+  <view class="daohang1" bindtap="newprot">
+    <image src="../../images/daohang/shangchuan.png"></image>
+    <view>新品上架</view>
+  </view>
+  <view class="daohang1" bindtap="meigui">
+    <image src="../../images/daohang/title.png"></image>
+    <view>玫瑰花礼</view>
+  </view>
+  <view class="daohang1" bindtap="home">
+    <image src="../../images/daohang/home.png"></image>
+    <view>家庭花材</view>
+  </view>
+  <view class="daohang1" bindtap="zhufu">
+    <view>
+      <image src="../../images/daohang/zgufu.png"></image>
+    </view>
+    <view class="title">祝福花礼</view>
+  </view>
+</view>
+<!-- 轮播 -->
+<view class="lunbo">
+  <swiper>
+    <swiper-item class="lunboimg" circular="true" wx:for="{{lunbo}}">
+      <image src="{{item.product_imgsrc}}" bindtap="lunbo" data-id="{{item.id}}"></image>
+      <view>{{item.product_name}}</view>
+      <view></view>
+      <view></view>
+      <view></view>
+      <view>¥{{item.product_price}}</view>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- 圣诞精选 -->
+<view class="titleo">
+  <view>/圣诞精选/</view>
+</view>
+<view class="shengdan">
+  <view class="shengdanimg" wx:for="{{shengdan}}">
+    <image src="{{item.product_imgsrc}}" bindtap="lunbo" data-id="{{item.id}}"></image>
+    <view>{{item.product_name}}</view>
+    <view></view>
+    <view></view>
+    <view></view>
+  </view>
+</view>
+<!-- 新品上架 -->
+<view class="titleo">
+  <view>/气质花束/</view>
+</view>
+
+<view class="lunbo">
+<view class="newmyimg" >
+  <image src="../../images/chanp/10.jpg" bindtap="lunbo" data-id="10"></image>
+  <view>玫瑰色的下午</view>
+  <view>
+    ¥169
+    <view class="gwc" bindtap="addgwc" data-name="玫瑰色的下午" data-src="../../images/chanp/10.jpg" data-price="169" data-lei="2">
+      <image src="../../images/daohang/gwc.png" bindtap="pay" data-id="../../images/chanp/10.jpg" data-price="169" data-name="玫瑰色的下午"></image>
+    </view>
+  </view>
+</view>
+  <swiper >
+    <swiper-item class="lunboimg" circular="true" wx:for="{{qizhi}}">
+      <image src="{{item.product_imgsrc}}" bindtap="lunbo" data-id="{{item.id}}"></image>
+      <view>{{item.product_name}}</view>
+      <view></view>
+      <view></view>
+      <view></view>
+      <view>¥{{item.product_price}}</view>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- 热卖推荐 -->
+<view class="titleo">
+  <view>/热卖推荐/</view>
+</view>
+<view class="newmyimg">
+  <image src="../../images/chanp/lunbo-1.jpg" bindtap="lunbo" data-id="23"></image>
+  <view>为你钟情</view>
+  <view>
+    ¥399
+    <view class="gwc" bindtap="addgwc" data-name="为你钟情" data-src="../../images/chanp/lunbo-1.jpg" data-price="339" data-lei="3">
+      <image src="../../images/daohang/gwc.png"></image>
+    </view>
+  </view>
+</view>
+<view class="lunbo">
+  <swiper>
+    <swiper-item class="lunboimg" circular="true" wx:for="{{hot}}">
+      <image src="{{item.product_imgsrc}}" bindtap="lunbo" data-id="{{item.id}}"></image>
+      <view>{{item.product_name}}</view>
+      <view></view>
+      <view></view>
+      <view></view>
+      <view>¥{{item.product_price}}</view>
+    </swiper-item>
+  </swiper>
+</view>
+<view class="titleo">
+  <view>/花在这里,所以美好/</view>
+</view>

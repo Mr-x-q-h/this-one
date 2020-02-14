@@ -1,0 +1,44 @@
+{
+  "pages": [
+    
+    "huali/huali/huali",
+    "huali/xiangq/xiangq",
+    "huali/prot/prot",
+    "huali/mycar/mycar",
+    "pages/index/index",
+    "pages/logs/logs",
+    "huali/me/me"
+  
+   
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "huali/huali/huali",
+        "text": "首页",
+        "iconPath": "images/dh/index2.png",
+        "selectedIconPath": "images/dh/index1.png"
+      },
+      {
+        "pagePath": "huali/mycar/mycar",
+        "text": "购物车",
+        "iconPath": "images/dh/gwc1.png",
+        "selectedIconPath": "images/dh/gwc2.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "images/dh/me2.png",
+        "selectedIconPath": "images/dh/me1.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

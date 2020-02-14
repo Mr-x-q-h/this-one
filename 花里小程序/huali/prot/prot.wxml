@@ -1,0 +1,19 @@
+<!--huali/prot/prot.wxml-->
+<view class="prot">
+  <view class="newmyimg" wx:for="{{protarr}}">
+    <image src="{{item.product_imgsrc}}"></image>
+    <view>{{item.product_name}}</view>
+    <view>
+      ¥{{item.product_price}}
+      <view class="gwc" bindtap="addcar"  data-name="{{item.product_name}}" data-src="{{item.product_imgsrc}}" data-price="{{item.product_price}}" data-lei="{{item.lei}}">
+        <image src="../../images/daohang/gwc.png"></image>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="jiesuan" bindtap="gwc">
+
+    
+      去购物车
+   
+  </view>

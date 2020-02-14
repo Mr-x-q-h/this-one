@@ -1,0 +1,117 @@
+/* huali/mycar/mycar.wxss */
+
+.carimg{
+  display: flex;
+  align-items:center;
+  width: 100%;
+  margin-bottom: 10px;
+  height: 100px;
+  border: 1px rgb(207, 205, 205) solid;
+}
+.carimg>view{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  height: 100%;
+
+}
+.carimg>view>view:nth-of-type(1){
+   width: 100%;
+    height: 100%;
+    margin: 10px;
+}
+.carimg>view>view:nth-of-type(2){
+    margin: 0px 0px 5px 10px;
+}
+.carimg>view>view:nth-of-type(2)>text:nth-of-type(2){
+  margin-left: 70%;
+}
+.carimg image{
+  height: 100%;
+  width: 140px;
+}
+
+
+/* 购物车空的状态下 */
+
+.carnull{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 300px;
+  align-content: center;
+}
+.carnull>view{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 30px;
+}
+.carnull>view:nth-of-type(1){
+  font-size: 22px;
+  color:black;
+}
+.carnull>view:nth-of-type(2){
+  font-size: 12px;
+  color: rgb(209, 208, 208);
+}
+.carnull>view:nth-of-type(3){
+  width: 120px;
+  line-height: 30px;
+  margin-top: 20px;
+  border: 1px rgb(241, 126, 48) solid;
+  border-radius: 5px;
+  font-size: 18;
+  color: rgb(241, 126, 48);
+}
+
+
+#id{
+  display: none;
+}
+/* 结算页面 */
+
+.jiesuan{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background-color: white;
+  position: fixed;
+  bottom: 0px;
+}
+.jiesuan>view{
+  display: flex;
+  justify-content: flex-end;
+}
+.jiesuan>view>view:nth-of-type(3){
+  width: 30%;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+.jiesuan>view>view:nth-of-type(2){
+  width: 50%;
+  display: flex;
+  font-size: 14px;
+  justify-content: center;
+  align-content:flex-start;
+  flex-wrap: wrap;
+
+}
+.jiesuan>view>view:nth-of-type(1){
+  width: 20%;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+
+
+}
+#modal input{
+  margin-top: 10px;
+}
+.footer{
+  height: 50px;
+}
